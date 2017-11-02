@@ -104,7 +104,7 @@ namespace Crm.Account.Api
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "CRM API V1");
+                options.SwaggerEndpoint("../swagger/v1/swagger.json", "CRM API V1");
             });
 
             app.UseMvc(routes =>
